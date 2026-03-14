@@ -1,0 +1,80 @@
+{
+  "currency": "GBP",
+  "daycare": {
+    "fullDay": {
+      "label": "Full day (Mon-Fri, 7:30-6:00)",
+      "price": 30
+    },
+    "halfDay": {
+      "label": "Half day (7:30-12:30 or 1:00-6:00)",
+      "price": 20
+    },
+    "discounts": [
+      "10% discount for 5 bookings",
+      "15% discount for 10 bookings",
+      "50% discount for each additional dog"
+    ]
+  },
+  "grooming": {
+    "small": {
+      "deShed": 30,
+      "bathAndDry": 25,
+      "styling": 35
+    },
+    "medium": {
+      "deShed": 40,
+      "bathAndDry": 30,
+      "styling": 40
+    },
+    "large": {
+      "deShed": 45,
+      "bathAndDry": 35,
+      "styling": 45
+    },
+    "extraLarge": {
+      "deShed": "60+",
+      "bathAndDry": "50+",
+      "styling": "60+"
+    }
+  },
+  "addons": [
+    { "name": "Nail clipping", "price": 10 },
+    { "name": "Eye and ear cleaning", "price": 10 },
+    { "name": "Anal gland expression", "price": 10 }
+  ],
+  "puppy": {
+    "firstGroom": "25 (all sizes, up to 6 months)",
+    "secondGroomFrom": {
+      "small": 25,
+      "medium": 30,
+      "large": 35
+    }
+  },
+  "spa": [
+    {
+      "name": "Doggy Milk Bath",
+      "description": "Spoil your pooch with a luxurious milk bath that cleanses, soothes, and softens their skin and coat. This calming and nourishing experience will leave them feeling relaxed and smelling divine.",
+      "price": 45
+    },
+    {
+      "name": "Soothing Mud Bath",
+      "description": "This mineral-rich mud bath is perfect for dogs with itchy or dry skin. Packed with healing ingredients like aloe vera and oatmeal, it promotes healthy cell regeneration and eases irritation.",
+      "price": 45
+    },
+    {
+      "name": "Shed Safely Mud Bath",
+      "description": "Reduce shedding and promote a healthy coat with our Shed Safely Mud Bath. This deep-cleaning treatment is infused with omega oils and B vitamins to help relieve and prevent excessive shedding.",
+      "price": 45
+    },
+    {
+      "name": "Green Mud Bath",
+      "description": "Specially formulated for senior dogs, this antioxidant-rich mud bath revitalises the skin and coat, leaving your older companion feeling refreshed and rejuvenated.",
+      "price": 30
+    },
+    {
+      "name": "Paw Spa",
+      "description": "Reduce shedding and promote a healthy coat with our Shed Safely Mud Bath. This deep-cleaning treatment is infused with omega oils and B vitamins to help relieve and prevent excessive shedding.",
+      "price": 15
+    }
+  ]
+}

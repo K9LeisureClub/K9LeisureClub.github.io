@@ -1,0 +1,77 @@
+{
+  "hero": {
+    "kicker": "BOOK NOW",
+    "title": "Make a Splash with Hydrotherapy",
+    "intro": "Improve Your Dog's Health and Happiness at K9 Leisure Club"
+  },
+  "sections": [
+    {
+      "title": "Improve Your Dog's Health and Happiness at K9 Leisure Club",
+      "paragraphs": [
+        "Looking for a fun and effective way to improve your dog's health and well-being? Dive into the world of hydrotherapy at K9 Leisure Club!",
+        "Our state-of-the-art hydrotherapy centre in Kidderminster offers aquatic therapies to help your furry friend achieve fitness goals and live their best life.",
+        "Note: Owners are required to be present for all hydrotherapy sessions."
+      ],
+      "ctaText": "Contact us",
+      "ctaHref": "contact.html",
+      "image": "public/1E5A8005-scaled.jpg",
+      "alt": "Hydrotherapy pool session"
+    },
+    {
+      "title": "Why Hydrotherapy?",
+      "paragraphs": [
+        "Hydrotherapy, also known as water therapy, can help dogs of all ages and abilities."
+      ],
+      "bullets": [
+        "Pain Relief: Soothe aching joints and muscles.",
+        "Improved Mobility: Increase strength, flexibility, and range of motion.",
+        "Weight Management: Burn calories and build muscle in a low-impact environment.",
+        "Faster Recovery: Rehabilitate after injury or surgery.",
+        "Enhanced Fitness: Improve cardiovascular health and overall well-being."
+      ],
+      "reverse": true,
+      "image": "public/1E5A8155-scaled.jpg",
+      "alt": "Dog swimming exercise"
+    },
+    {
+      "title": "Our Hydrotherapy Services",
+      "paragraphs": [
+        "We offer a variety of hydrotherapy services tailored to your dog's individual needs."
+      ],
+      "bullets": [
+        "Underwater Treadmill Therapy: Improve mobility and build strength.",
+        "Swim Therapy: Enjoy a fun and gentle workout in our heated pool.",
+        "Therapeutic Exercises: Targeted exercises guided by a certified hydrotherapist."
+      ],
+      "image": "public/1E5A8320-scaled.jpg",
+      "alt": "Hydrotherapy service options"
+    },
+    {
+      "title": "Our Commitment to Excellence",
+      "paragraphs": [
+        "At K9 Leisure Club, we're committed to providing the highest quality hydrotherapy services."
+      ],
+      "bullets": [
+        "Adjustable Temperature Control: Ensuring comfort during every session.",
+        "Certified Hydrotherapist: Qualified specialist support for your dog.",
+        "Extensive Safety Measures: A clean and hygienic environment.",
+        "Collaborative Approach: We work with your veterinarian for coordinated care."
+      ],
+      "reverse": true,
+      "ctaText": "Book now",
+      "ctaHref": "contact.html"
+    },
+    {
+      "title": "Choose your hydrotherapy path",
+      "paragraphs": [
+        "Looking for hydrotherapy for dogs or a dog aqua therapy near me in Kidderminster? K9 Leisure Club is the perfect place to make a splash."
+      ],
+      "bullets": [
+        "Clinical Hydrotherapy",
+        "Fun & Fitness"
+      ],
+      "ctaText": "Clinical Hydrotherapy",
+      "ctaHref": "hydrotherapy-clinical.html"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "hero": {
+    "kicker": "Blog",
+    "title": "Advice, insights, and practical dog care guidance",
+    "intro": "All blog content is loaded from this JSON file so you can update it easily with a CMS workflow."
+  },
+  "posts": [
+    {
+      "slug": "hydrotherapy-transform-your-dog",
+      "title": "How Hydrotherapy Can Transform Your Dog's Routine",
+      "date": "2026-03-10",
+      "category": "Hydrotherapy",
+      "excerpt": "Hydrotherapy can support mobility, confidence, and low-impact conditioning for a wide range of dogs.",
+      "content": [
+        "Hydrotherapy provides an effective low-impact environment for dogs that need mobility support or controlled exercise.",
+        "Because water reduces weight-bearing pressure, movement can become more comfortable for dogs recovering from injury or dealing with stiffness.",
+        "At K9 Leisure Club, sessions are planned to match your dog's goals, whether that is confidence building, clinical support, or general conditioning."
+      ]
+    },
+    {
+      "slug": "why-daycare-beats-home-alone",
+      "title": "Why Doggy Daycare Beats Staying Home Alone",
+      "date": "2026-03-08",
+      "category": "Doggy Daycare",
+      "excerpt": "Structured daycare days combine social play, enrichment, and rest for healthier routines.",
+      "content": [
+        "Many dogs thrive when their day includes supervised social activity instead of long periods of isolation.",
+        "Daycare provides mental stimulation, movement, and consistent routines that can reduce boredom-related behaviour at home.",
+        "A quality daycare plan is not constant excitement; it is balanced, paced, and suited to individual temperament."
+      ]
+    },
+    {
+      "slug": "grooming-beyond-looking-good",
+      "title": "Grooming Is About More Than Looking Good",
+      "date": "2026-03-06",
+      "category": "Grooming",
+      "excerpt": "Professional grooming supports skin comfort, coat condition, and routine hygiene.",
+      "content": [
+        "Regular grooming supports both appearance and practical wellbeing.",
+        "De-shedding, bathing, coat trims, and hygiene care all contribute to comfort and healthy skin management.",
+        "Choosing a consistent grooming plan can also help spot small changes early, such as sensitivity, matting, or irritation."
+      ]
+    }
+  ]
+}

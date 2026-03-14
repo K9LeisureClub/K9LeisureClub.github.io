@@ -1,0 +1,120 @@
+{
+  "brand": {
+    "name": "K9 Leisure Club",
+    "tagline": "Hydrotherapy | Daycare | Grooming"
+  },
+  "contact": {
+    "phone": "01562 312580",
+    "phoneHref": "tel:01562312580",
+    "email": "info@k9leisureclub.co.uk",
+    "emailHref": "mailto:info@k9leisureclub.co.uk",
+    "address": "118 Worcester Rd, Kidderminster, DY10 1JR",
+    "officeHours": "Mon-Friday: 9am - 5pm",
+    "bookingHoursNote": "Booking Hours will vary"
+  },
+  "social": {
+    "instagram": "https://www.instagram.com/K9leisureclub",
+    "facebook": "https://www.facebook.com/p/k9leisureclub-61559046377843/",
+    "tiktok": "https://www.tiktok.com/@k9leisureclub?_t=8s6Qg2feo3F&_r=1"
+  },
+  "maps": {
+    "short": "https://maps.app.goo.gl/Y9oQPtXHmM6vHThh8"
+  },
+  "navigation": [
+    {
+      "label": "Home",
+      "href": "index.html",
+      "match": [
+        "index.html"
+      ]
+    },
+    {
+      "label": "Services",
+      "href": "services.html",
+      "match": [
+        "services.html",
+        "doggy-daycare.html",
+        "grooming.html",
+        "spa-packages.html",
+        "hydrotherapy.html",
+        "hydrotherapy-clinical.html",
+        "hydrotherapy-fun-fitness.html"
+      ],
+      "children": [
+        {
+          "label": "Doggy Daycare",
+          "href": "doggy-daycare.html"
+        },
+        {
+          "label": "Grooming",
+          "href": "grooming.html",
+          "children": [
+            {
+              "label": "Spa Packages",
+              "href": "spa-packages.html"
+            }
+          ]
+        },
+        {
+          "label": "Hydrotherapy",
+          "href": "hydrotherapy.html",
+          "children": [
+            {
+              "label": "Clinical",
+              "href": "hydrotherapy-clinical.html"
+            },
+            {
+              "label": "Fun & Fitness",
+              "href": "hydrotherapy-fun-fitness.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "About us",
+      "href": "about.html",
+      "match": [
+        "about.html",
+        "faq.html",
+        "news.html",
+        "blogs/index.html",
+        "blogs/post.html"
+      ],
+      "children": [
+        {
+          "label": "FAQ",
+          "href": "faq.html"
+        },
+        {
+          "label": "News",
+          "href": "news.html"
+        },
+        {
+          "label": "Blog",
+          "href": "blogs/index.html"
+        }
+      ]
+    },
+    {
+      "label": "Price List",
+      "href": "prices.html",
+      "match": [
+        "prices.html"
+      ]
+    },
+    {
+      "label": "Book Now",
+      "href": "contact.html",
+      "match": [
+        "contact.html",
+        "book-now.html"
+      ],
+      "cta": true
+    }
+  ],
+  "seo": {
+    "siteTitle": "K9 Leisure Club",
+    "siteDescription": "Dog daycare, grooming, hydrotherapy, and spa services in Kidderminster."
+  }
+}

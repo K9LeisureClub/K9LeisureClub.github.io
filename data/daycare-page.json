@@ -1,0 +1,82 @@
+{
+  "hero": {
+    "kicker": "BOOK NOW",
+    "title": "Pawsome Days at K9 Leisure Club Doggy Day Care",
+    "intro": "Your Dog's Home Away from Home in Kidderminster"
+  },
+  "sections": [
+    {
+      "title": "Your Dog's Home Away from Home in Kidderminster",
+      "paragraphs": [
+        "Leaving your furry best friend while you're at work or out and about can be ruff! But don't worry, K9 Leisure Club is here to the rescue!",
+        "Our dog nursery and daycare centre in Kidderminster is the pawfect place for your pup to play, socialise, and have a tail-waggin' good time while you're away."
+      ],
+      "ctaText": "Contact us",
+      "ctaHref": "contact.html",
+      "image": "public/photo2.jpg",
+      "alt": "Daycare entrance and play area"
+    },
+    {
+      "title": "A Day Filled with Fun and Friends",
+      "paragraphs": [
+        "At K9 Leisure Club, we believe in making every day an adventure! Our spacious indoor and outdoor play areas are designed to keep your dog happy, active, and entertained."
+      ],
+      "bullets": [
+        "Playtime Galore: Zoom around with new friends, chase balls, and enjoy exciting games.",
+        "One-on-one attention: We offer dedicated one-on-one sessions for pups who prefer personalised playtime.",
+        "Rest and Relaxation: For chilled-out moments, we have cosy guest areas for naps and downtime."
+      ],
+      "image": "public/1T4A7270.jpg",
+      "alt": "Dogs playing in daycare"
+    },
+    {
+      "title": "Half-Day Adventures",
+      "paragraphs": [
+        "Want to give your dog a taste of the fun? We offer half-day daycare sessions!",
+        "Please stick to agreed drop-off and pick-up times to ensure a smooth and safe experience for everyone."
+      ],
+      "ctaText": "Contact us",
+      "ctaHref": "contact.html",
+      "reverse": true,
+      "image": "public/1T4A7333-scaled.jpg",
+      "alt": "Half day daycare sessions"
+    },
+    {
+      "title": "Safety First, Fun Always",
+      "paragraphs": [
+        "Our top priority is the safety and well-being of your furry friend. Our team is made up of dog-loving professionals who are trained in dog behaviour and first aid."
+      ],
+      "bullets": [
+        "Supervised Play: We keep a watchful eye on all furry guests.",
+        "Clean and Comfy: Our facility is kept sparkling clean and climate-controlled.",
+        "Peace of Mind: We provide a safe and nurturing environment where your dog can thrive."
+      ],
+      "image": "public/1E5A6691-scaled.jpg",
+      "alt": "Daycare care and supervision team",
+      "reverse": true,
+      "ctaText": "Book now",
+      "ctaHref": "contact.html"
+    },
+    {
+      "title": "Opening Times and Prices",
+      "paragraphs": [
+        "Full Day Doggy Daycare - Monday to Friday, 7:30am to 6:00pm - GBP 30",
+        "Half Day Doggy Daycare - Monday to Friday, 7:30am to 12:30pm or 1:00pm to 6:00pm - GBP 20",
+        "Discounts: 10% discount for 5 bookings, 15% discount for 10 bookings, and 50% discount for each additional dog."
+      ],
+      "image": "public/1T4A7573-scaled.jpg",
+      "alt": "Daycare timetable and prices"
+    },
+    {
+      "title": "Important Information",
+      "paragraphs": [
+        "Your pooch is required to attend a free 2 hour assessment prior to your first booking so we can assess their needs and confirm daycare suitability.",
+        "Please download and return registration, consent, and acceptance forms before booking.",
+        "For safety and prevention of infectious diseases, we require evidence that inoculations (including boosters) are up to date and worming has been completed within three months."
+      ],
+      "ctaText": "Complete form",
+      "ctaHref": "contact.html",
+      "reverse": true
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "hero": {
+    "kicker": "Contact / Book Now",
+    "title": "Speak with the K9 Leisure Club team and start your booking",
+    "intro": "Use this page for enquiries and bookings across daycare, grooming, spa, and hydrotherapy."
+  },
+  "booking": {
+    "title": "Book now in 3 steps"
+  },
+  "fallback": {
+    "title": "Need help right now?",
+    "text": "If online submission is unavailable, call or email directly and the team will help with your enquiry."
+  }
+}

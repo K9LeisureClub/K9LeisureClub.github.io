@@ -1,0 +1,29 @@
+{
+  "hero": {
+    "kicker": "FAQs",
+    "title": "Frequently asked questions from the source topics",
+    "intro": "Answers are based on the reference content themes and rewritten for clarity."
+  },
+  "items": [
+    {
+      "question": "Why is socialisation important in daycare?",
+      "answer": "The source describes daycare as supervised social interaction where dogs can play safely, build confidence, and maintain healthy activity routines."
+    },
+    {
+      "question": "Which dogs need grooming and how often?",
+      "answer": "Frequency depends on coat type and condition. The source grooming content includes options from routine coat maintenance to full styling and hygiene support."
+    },
+    {
+      "question": "Do I need both flea and worm treatments?",
+      "answer": "Reference blog content frames flea and worm control as separate concerns that may require different treatment schedules, so owners should follow veterinary advice."
+    },
+    {
+      "question": "Why choose hydrotherapy?",
+      "answer": "The hydrotherapy pages describe it as a low-impact option that may support mobility, rehabilitation, and fitness where land exercise alone is not ideal."
+    },
+    {
+      "question": "Can maps be disabled for privacy?",
+      "answer": "Yes. This site gates the map behind functional cookie consent and still provides phone, email, and address details for direct contact."
+    }
+  ]
+}

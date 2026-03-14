@@ -1,0 +1,47 @@
+{
+  "hero": {
+    "kicker": "BOOK NOW",
+    "title": "Clinical Hydrotherapy: Rehabilitation and Recovery",
+    "intro": "Helping Your Dog Heal and Thrive"
+  },
+  "sections": [
+    {
+      "title": "Helping Your Dog Heal and Thrive",
+      "paragraphs": [
+        "At K9 Leisure Club, we understand that sometimes our furry friends need a little extra help to recover from injury or manage chronic conditions.",
+        "Our clinical hydrotherapy services are designed to provide targeted rehabilitation and support for dogs facing a variety of health challenges.",
+        "Note: Owners are required to be present for all hydrotherapy sessions."
+      ],
+      "ctaText": "Contact us",
+      "ctaHref": "contact.html",
+      "image": "public/1E5A8079-scaled.jpg",
+      "alt": "Clinical hydrotherapy session"
+    },
+    {
+      "title": "Conditions We Can Help With",
+      "bullets": [
+        "Post-surgical rehabilitation after orthopaedic procedures.",
+        "Arthritis management to reduce pain and improve mobility.",
+        "Neurological conditions support for balance and strength.",
+        "Obesity management for safe weight loss and fitness.",
+        "Muscle injuries and strains support to promote healing."
+      ],
+      "reverse": true,
+      "image": "public/1E5A8180-scaled.jpg",
+      "alt": "Hydrotherapy rehabilitation"
+    },
+    {
+      "title": "Our Clinical Hydrotherapy Approach",
+      "paragraphs": [
+        "Our certified hydrotherapist will work with you and your veterinarian to develop a customised treatment plan for your dog."
+      ],
+      "bullets": [
+        "Underwater treadmill therapy to improve gait, strength, and endurance.",
+        "Therapeutic exercises to target muscle groups and improve range of motion.",
+        "Manual therapy including massage and stretching to relieve tension."
+      ],
+      "ctaText": "Book now",
+      "ctaHref": "contact.html"
+    }
+  ]
+}

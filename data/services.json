@@ -1,0 +1,44 @@
+[
+  {
+    "slug": "daycare",
+    "name": "Doggy Daycare",
+    "summary": "Supervised playgroups, indoor and outdoor activities, and social enrichment.",
+    "highlights": [
+      "Supervised playgroups",
+      "Indoor and outdoor play",
+      "Toys and structured activities"
+    ]
+  },
+  {
+    "slug": "grooming",
+    "name": "Dog Grooming",
+    "summary": "From tidy-ups to full styling, with practical add-ons and puppy options.",
+    "highlights": [
+      "De-shedding",
+      "Bath and dry",
+      "Styling",
+      "Nail, eye, ear, and gland care"
+    ]
+  },
+  {
+    "slug": "spa",
+    "name": "Dog Spa",
+    "summary": "Specialist spa packages including mud and milk bath treatments.",
+    "highlights": [
+      "Doggy Milk Bath",
+      "Soothing Mud Bath",
+      "Shed Safely Mud Bath",
+      "Paw Spa"
+    ]
+  },
+  {
+    "slug": "hydrotherapy",
+    "name": "Hydrotherapy",
+    "summary": "Clinical and fitness-focused water-based sessions.",
+    "highlights": [
+      "Canine water therapy",
+      "Dog swimming",
+      "Condition-aware sessions"
+    ]
+  }
+]

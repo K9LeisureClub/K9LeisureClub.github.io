@@ -1,0 +1,40 @@
+{
+  "hero": {
+    "kicker": "BOOK NOW",
+    "title": "Treat Your Furry Friend to the Ultimate Dog Spa Day in Kidderminster",
+    "intro": "Does your dog deserve a little extra TLC?"
+  },
+  "sections": [
+    {
+      "title": "Luxury dog spa treatments",
+      "paragraphs": [
+        "Then it's time for a spa day at K9 Leisure Club! Our luxurious dog spa in Kidderminster offers a range of pampering treatments to soothe, rejuvenate, and leave your pup feeling like a million bones."
+      ],
+      "ctaText": "Contact us",
+      "ctaHref": "contact.html",
+      "image": "public/1T4A7385-scaled.jpg",
+      "alt": "Dog spa treatment room"
+    },
+    {
+      "title": "Indulge in Our Spa Packages",
+      "bullets": [
+        "Doggy Milk Bath - GBP 45: Cleanses, soothes, and softens skin and coat.",
+        "Soothing Mud Bath - GBP 45: Great for itchy or dry skin with aloe vera and oatmeal.",
+        "Shed Safely Mud Bath - GBP 45: Deep-cleaning treatment with omega oils and B vitamins.",
+        "Green Mud Bath - GBP 30: Antioxidant-rich support for senior dogs.",
+        "Paw Spa - GBP 15: Deep-cleaning soak to refresh and revitalise paws."
+      ],
+      "reverse": true,
+      "image": "public/1T4A7461-scaled.jpg",
+      "alt": "Spa package list"
+    },
+    {
+      "title": "Book your dog's spa day today",
+      "paragraphs": [
+        "Looking for a dog spa near me or wondering about dog spa prices in Kidderminster? K9 Leisure Club offers the perfect pampering experience for your beloved companion."
+      ],
+      "ctaText": "Book now",
+      "ctaHref": "contact.html"
+    }
+  ]
+}

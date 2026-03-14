@@ -1,0 +1,44 @@
+{
+  "hero": {
+    "kicker": "About K9 Leisure Club",
+    "title": "Born from a passion for paws",
+    "intro": "At K9 Leisure Club, we're not just a business – we're a haven for happy hounds! Born from a lifelong love of animals and a desire to create a truly special place for dogs, we've poured our hearts and souls into building a centre where every canine companion feels safe, loved, and pampered."
+  },
+  "story": [
+    "Our passion for paws runs deep. Laura, with years of experience as a dog groomer and kennel manager, understands the unique needs and quirks of every furry friend.",
+    "Combined with Andy's business acumen and shared love for animals, we've created a dream team dedicated to providing exceptional care and creating a thriving environment for dogs to flourish.",
+    "We're committed to giving back to the community — proudly offering free hydrotherapy slots to local rescue centres and providing placements for students eager to learn about canine care."
+  ],
+  "services": [
+    {
+      "title": "Daycare Delights",
+      "text": "Our unique daycare setup offers the best of both worlds: individual kennels for downtime and a spacious play area for socialising and exercise. We ensure every dog gets the perfect balance of rest and play throughout the day."
+    },
+    {
+      "title": "Grooming with a View",
+      "text": "Our tranquil grooming room offers a pampering experience like no other. While your dog enjoys a luxurious groom, you can relax and watch the world go by, knowing your furry friend is in expert hands."
+    },
+    {
+      "title": "Hydrotherapy Haven",
+      "text": "Our state-of-the-art hydrotherapy centre is the heart of K9 Leisure Club. Whether your dog needs rehabilitation, fitness training, or simply a fun swim, our customised sessions provide a wealth of benefits in a safe and supportive environment."
+    }
+  ],
+  "community": "We understand the needs of dog owners in Kidderminster and the surrounding areas. Our unique combination of daycare, grooming, and hydrotherapy services, coupled with our passionate team and commitment to excellence, sets us apart.",
+  "team": [
+    {
+      "name": "Laura",
+      "role": "Co-Founder",
+      "photo": "public/Laura.jpg"
+    },
+    {
+      "name": "Andy",
+      "role": "Co-Founder",
+      "photo": "public/Andy.jpg"
+    },
+    {
+      "name": "Mia",
+      "role": "Team Member",
+      "photo": "public/Mia.jpg"
+    }
+  ]
+}

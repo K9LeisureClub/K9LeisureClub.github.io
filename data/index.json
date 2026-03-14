@@ -1,0 +1,112 @@
+{
+  "hero": {
+    "kicker": "Welcome to K9 Leisure Club",
+    "title": "Where dogs come to play, pamper, and splash",
+    "intro": "Hydrotherapy | Daycare | Grooming",
+    "ctaPrimary": "BOOK NOW",
+    "ctaPrimaryHref": "contact.html",
+    "ctaSecondary": "Find out more",
+    "ctaSecondaryHref": "doggy-daycare.html"
+  },
+  "sections": [
+    {
+      "title": "Doggy Daycare Centre that's pawsitively awesome!",
+      "paragraphs": [
+        "Is your furry best friend bursting with energy? Do they deserve a spa day fit for a king (or queen)? Look no further than K9 Leisure Club in Kidderminster! We're your one-stop shop for doggy day care, grooming, and hydrotherapy in Worcestershire."
+      ],
+      "image": "public/1E5A6691-scaled.jpg",
+      "alt": "Daycare play area at K9 Leisure Club",
+      "ctaText": "Find out more",
+      "ctaHref": "doggy-daycare.html"
+    },
+    {
+      "title": "Where dogs come to play, pamper, and splash",
+      "paragraphs": [
+        "At K9 Leisure Club, your dog won't just be hanging out - they'll be living their best life! Our spacious and secure play areas are perfect for making new friends and burning off energy. We've got:"
+      ],
+      "bullets": [
+        "Supervised playgroups: Our trained staff ensure safe and stimulating socialisation.",
+        "Indoor and outdoor fun: Rain or shine, the party never stops.",
+        "Tons of toys and activities: From agility courses to cuddle time, there's something for every pup."
+      ],
+      "image": "public/1E5A6649-scaled.jpg",
+      "alt": "Dogs socialising in supervised groups",
+      "reverse": true
+    },
+    {
+      "title": "Grooming that's top dog",
+      "paragraphs": [
+        "Our expert groomers will have your dog looking and feeling fabulous. We offer everything from a quick tidy-up to the full pampered spa experience."
+      ],
+      "bullets": [
+        "Bathing and drying: Say goodbye to muddy paws and hello to a fresh, clean pup.",
+        "Haircuts and styling: From breed-specific cuts to trendy trims, we've got you covered.",
+        "Nail trims and ear cleaning: We take care of the essential details."
+      ],
+      "image": "public/1T4A7443-scaled.jpg",
+      "alt": "Professional dog grooming room",
+      "ctaText": "Find out more",
+      "ctaHref": "grooming.html"
+    },
+    {
+      "title": "Hydrotherapy that makes a splash",
+      "paragraphs": [
+        "Our state-of-the-art hydrotherapy pool is perfect for dogs of all ages and abilities. Whether your dog is recovering from surgery, managing a condition like arthritis, or just loves to swim, our qualified hydrotherapists will create a tailored plan."
+      ],
+      "bullets": [
+        "Underwater treadmill: Improve mobility, build strength, and reduce pain.",
+        "Swimming pool: A fun and gentle way to exercise."
+      ],
+      "image": "public/1E5A8005-scaled.jpg",
+      "alt": "Hydrotherapy and exercise space",
+      "reverse": true,
+      "ctaText": "Find out more",
+      "ctaHref": "hydrotherapy.html"
+    },
+    {
+      "title": "Find the perfect daycare for dogs near me",
+      "paragraphs": [
+        "If you're looking for doggy daycare near me or daycare for dogs near me in Kidderminster, Worcestershire, you've come to the right place. K9 Leisure Club is the pawfect choice for your beloved companion.",
+        "Ready to give your dog the best day ever? Contact us today to book a tour, schedule a grooming appointment, or learn more about our hydrotherapy services!"
+      ],
+      "image": "public/1T4A7578-scaled.jpg",
+      "alt": "Dog activity and play",
+      "ctaText": "Book now",
+      "ctaHref": "contact.html"
+    }
+  ],
+  "quickLinks": [
+    {
+      "title": "Services",
+      "description": "Daily care and pampering in one place.",
+      "icon": "public/icons/FontAwesomeicon-paw.svg",
+      "links": [
+        { "label": "Doggy Daycare", "href": "doggy-daycare.html" },
+        { "label": "Grooming", "href": "grooming.html" },
+        { "label": "Spa packages", "href": "spa-packages.html" },
+        { "label": "Price List", "href": "prices.html" }
+      ]
+    },
+    {
+      "title": "Hydrotherapy",
+      "description": "Support recovery, fitness, and confidence.",
+      "icon": "public/icons/FaSolidDumbbell.svg",
+      "links": [
+        { "label": "Hydrotherapy", "href": "hydrotherapy.html" },
+        { "label": "Clinical", "href": "hydrotherapy-clinical.html" },
+        { "label": "Fun & Fitness", "href": "hydrotherapy-fun-fitness.html" }
+      ]
+    },
+    {
+      "title": "Company",
+      "description": "Get in touch, read updates, and plan your visit.",
+      "icon": "public/icons/MaterialSymbolsCalendarMonthOutline.svg",
+      "links": [
+        { "label": "About us", "href": "about.html" },
+        { "label": "News", "href": "news.html" },
+        { "label": "Blog", "href": "blogs/index.html" },
+        { "label": "Contact Us", "href": "contact.html" }
+      ]
+    }
+  ]
+}

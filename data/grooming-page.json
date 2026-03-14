@@ -1,0 +1,61 @@
+{
+  "hero": {
+    "kicker": "BOOK NOW",
+    "title": "K9 Leisure Club's Dog Grooming Salon in Kidderminster",
+    "intro": "Get Your Groom On"
+  },
+  "sections": [
+    {
+      "title": "Get Your Groom On",
+      "paragraphs": [
+        "Does your furry friend need a little sprucing up? Maybe it's time for a full makeover?",
+        "At K9 Leisure Club, our expert dog groomers will have your pup looking and feeling their best in our state-of-the-art dog salon in Kidderminster."
+      ],
+      "ctaText": "Contact us",
+      "ctaHref": "contact.html",
+      "image": "public/1T4A7379-scaled.jpg",
+      "alt": "Dog grooming salon"
+    },
+    {
+      "title": "Our Dog Grooming Services",
+      "paragraphs": [
+        "We provide complete canine grooming services from maintenance visits to full restyle appointments."
+      ],
+      "bullets": [
+        "De-Shedding: Specialised treatment designed to reduce shedding and improve coat condition.",
+        "Bathing & Drying: A luxurious bathing and drying service for a fresh, pampered finish.",
+        "Styling: Breed-specific cuts, clipping, and scissoring for the right look.",
+        "Nail Clipping: Professional nail care for healthy paws.",
+        "Hand Stripping: Expert hand stripping for wire-haired coats.",
+        "Eye & Ear Cleaning: Hygiene care to keep your dog comfortable.",
+        "Anal Gland Expression: Professional care to prevent discomfort from impacted glands."
+      ],
+      "image": "public/1T4A7568-scaled.jpg",
+      "alt": "Grooming services overview",
+      "reverse": true
+    },
+    {
+      "title": "Our Dog Grooming Services and Prices",
+      "paragraphs": [
+        "Dog size pricing: Small de-shed from GBP 30, bathing and drying from GBP 25, styling from GBP 35.",
+        "Medium de-shed from GBP 40, bathing and drying from GBP 30, styling from GBP 40.",
+        "Large de-shed from GBP 45, bathing and drying from GBP 35, styling from GBP 45.",
+        "Extra large de-shed from GBP 60, bathing and drying from GBP 50, styling from GBP 60+.",
+        "Add-ons include nail clipping from GBP 10, eye and ear cleaning from GBP 10, and anal gland expression from GBP 10.",
+        "Puppy Introduction: Puppies first groom is GBP 25 for all sizes up to 6 months."
+      ],
+      "ctaText": "Spa Packages",
+      "ctaHref": "spa-packages.html"
+    },
+    {
+      "title": "Book your dog's grooming appointment today!",
+      "paragraphs": [
+        "Looking for dog groomers near me or dog clipping near me in Kidderminster? You've come to the right place!",
+        "K9 Leisure Club is the pawfect choice for all your dog grooming needs."
+      ],
+      "ctaText": "Book now",
+      "ctaHref": "contact.html",
+      "reverse": true
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "hero": {
+    "kicker": "Services",
+    "title": "Daycare, grooming, spa, and hydrotherapy",
+    "intro": "A consolidated service page combining the original source content into one clear structure.",
+    "ctaPrimary": "Book now",
+    "ctaPrimaryHref": "contact.html",
+    "ctaSecondary": "View full pricing",
+    "ctaSecondaryHref": "prices.html"
+  },
+  "sections": [
+    {
+      "title": "Doggy daycare for social dogs",
+      "paragraphs": [
+        "Structured groups, active play, and monitored rest blocks help dogs stay engaged without becoming overstimulated.",
+        "Choose full-day or half-day attendance and build a weekly rhythm that fits your routine."
+      ],
+      "bullets": [
+        "Supervised indoor and outdoor sessions",
+        "Full and half-day attendance options",
+        "Safe socialisation in balanced groups"
+      ],
+      "ctaText": "Explore daycare",
+      "ctaHref": "doggy-daycare.html",
+      "image": "public/1E5A6649-scaled.jpg",
+      "alt": "Dogs enjoying supervised daycare play"
+    },
+    {
+      "title": "Grooming and coat-care essentials",
+      "paragraphs": [
+        "From practical maintenance to style-led sessions, grooming is tailored to coat type, lifestyle, and comfort.",
+        "Add-on hygiene care can be included to keep regular visits efficient and stress-free."
+      ],
+      "bullets": [
+        "De-shed, bath and dry, and styling paths",
+        "Add-ons for nails, ears, and hygiene",
+        "Clear size-based pricing tiers"
+      ],
+      "ctaText": "Explore grooming",
+      "ctaHref": "grooming.html",
+      "image": "public/1T4A7539-scaled.jpg",
+      "alt": "Dog receiving a grooming treatment",
+      "reverse": true
+    },
+    {
+      "title": "Spa and hydrotherapy pathways",
+      "paragraphs": [
+        "Spa treatments support skin and coat comfort, while hydrotherapy pathways cover recovery, mobility, and low-impact conditioning.",
+        "You can choose a clinical route, a fitness route, or combine both with grooming and daycare support."
+      ],
+      "bullets": [
+        "Dog spa packages for coat and skin wellbeing",
+        "Clinical hydrotherapy support sessions",
+        "Fun and fitness swims for active dogs"
+      ],
+      "ctaText": "Explore hydrotherapy",
+      "ctaHref": "hydrotherapy.html",
+      "image": "public/1E5A8009-scaled.jpg",
+      "alt": "Dog hydrotherapy session"
+    }
+  ],
+  "accordion": [
+    {
+      "id": "daycare",
+      "title": "Doggy Daycare",
+      "paragraphs": [
+        "K9 Leisure Club positions daycare as a supervised, social, and active environment with indoor and outdoor play options.",
+        "The source content emphasizes safe socialisation, playgroup oversight, and balanced rest and play throughout the day."
+      ],
+      "bullets": [
+        "Full day: GBP 30 (Mon-Fri, 7:30-6:00)",
+        "Half day: GBP 20 (7:30-12:30 or 1:00-6:00)",
+        "Supervised playgroups with trained staff",
+        "Indoor and outdoor activity spaces"
+      ]
+    },
+    {
+      "id": "grooming",
+      "title": "Dog Grooming",
+      "paragraphs": [
+        "The grooming content describes options from quick tidy-ups to full styling and maintenance care.",
+        "Services include de-shedding, bathing and drying, styling, and practical hygiene add-ons."
+      ],
+      "bullets": [
+        "Small De-Shed from GBP 30",
+        "Bath and dry from GBP 25",
+        "Styling from GBP 35",
+        "Nail clipping, eye and ear cleaning, and anal gland expression from GBP 10"
+      ]
+    },
+    {
+      "id": "spa",
+      "title": "Dog Spa",
+      "paragraphs": [
+        "The spa section focuses on comfort-oriented treatments and coat and skin support.",
+        "Packages are framed as pampering sessions with practical coat-care benefits."
+      ],
+      "bullets": [
+        "Doggy Milk Bath: GBP 45",
+        "Soothing Mud Bath: GBP 45",
+        "Shed Safely Mud Bath: GBP 45",
+        "Green Mud Bath: GBP 30",
+        "Paw Spa: GBP 15"
+      ]
+    },
+    {
+      "id": "hydrotherapy",
+      "aliases": ["clinical", "fitness"],
+      "title": "Hydrotherapy",
+      "paragraphs": [
+        "Hydrotherapy is presented as supportive for mobility, recovery, and fitness, including both therapy-focused and fun swim pathways.",
+        "The source notes owner presence is required for sessions and highlights benefits for dogs with reduced mobility or rehabilitation goals."
+      ],
+      "bullets": [
+        "Clinical water therapy pathways",
+        "Fitness and fun swim sessions",
+        "Underwater treadmill-based support",
+        "Owner attendance required during sessions"
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "How often should dogs attend daycare?",
+      "a": "Attendance depends on routine, age, and energy levels. The source content offers both full-day and half-day routes so owners can build a suitable schedule."
+    },
+    {
+      "q": "Do dogs need grooming on a fixed schedule?",
+      "a": "The source service copy indicates frequency varies by coat type, breed, and lifestyle. Grooming options are offered from maintenance to full styling."
+    },
+    {
+      "q": "When is hydrotherapy useful?",
+      "a": "Hydrotherapy is described as useful for mobility support, post-operative recovery, fitness, and low-impact conditioning depending on a dog's needs."
+    }
+  ]
+}

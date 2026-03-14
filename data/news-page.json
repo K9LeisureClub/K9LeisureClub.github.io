@@ -1,0 +1,39 @@
+{
+  "hero": {
+    "kicker": "News and Blog",
+    "title": "Topic highlights from the original content",
+    "intro": "A consolidated list of source blog themes, rewritten as quick-read updates."
+  },
+  "posts": [
+    {
+      "title": "Dive In: How Hydrotherapy Can Transform Your Dog's Life",
+      "excerpt": "Hydrotherapy content highlights low-impact exercise, mobility support, and tailored water-based sessions for dogs with different needs.",
+      "category": "Hydrotherapy"
+    },
+    {
+      "title": "From Wolf to Woof: The Amazing Journey of Dogs",
+      "excerpt": "This topic explores how selective breeding shaped modern canine roles, traits, and temperament across working and companion breeds.",
+      "category": "Canine Education"
+    },
+    {
+      "title": "Happy Hounds: Why Doggy Daycare Beats Staying Home Alone",
+      "excerpt": "Daycare-focused content emphasizes supervised social play, stimulation, and routine for dogs who need active daytime engagement.",
+      "category": "Daycare"
+    },
+    {
+      "title": "Get Your Groom On",
+      "excerpt": "Grooming articles focus on coat care, styling options, and practical maintenance services that support canine comfort and hygiene.",
+      "category": "Grooming"
+    },
+    {
+      "title": "Holiday Hounds: Your Dog-Friendly Getaway Guide",
+      "excerpt": "Travel topic pages provide planning context for owners managing routines, transport, and care continuity while away from home.",
+      "category": "Travel"
+    },
+    {
+      "title": "How to Keep Your Dog Entertained Indoors",
+      "excerpt": "Indoor activity guidance covers enrichment ideas and structured games to reduce boredom and maintain healthy mental stimulation.",
+      "category": "Wellbeing"
+    }
+  ]
+}

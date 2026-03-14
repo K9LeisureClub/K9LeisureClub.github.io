@@ -1,0 +1,44 @@
+{
+  "hero": {
+    "kicker": "BOOK NOW",
+    "title": "Fun & Fitness Hydrotherapy",
+    "intro": "Let Your Dog Splash and Play"
+  },
+  "sections": [
+    {
+      "title": "Let Your Dog Splash and Play",
+      "paragraphs": [
+        "Is your dog a water lover? Then our fun and fitness sessions are perfect for them.",
+        "Our heated hydrotherapy pool provides a safe and fun environment for dogs to swim, play, and socialise.",
+        "Note: Owners are required to be present for all hydrotherapy sessions."
+      ],
+      "ctaText": "Contact us",
+      "ctaHref": "contact.html",
+      "image": "public/1E5A8251-scaled.jpg",
+      "alt": "Fun hydrotherapy swimming"
+    },
+    {
+      "title": "Benefits of Fun & Fitness Hydrotherapy",
+      "bullets": [
+        "Exercise and fitness: Low-impact workouts for cardiovascular health and muscle building.",
+        "Mental stimulation: Water play helps prevent boredom.",
+        "Socialisation: Controlled interaction with other dogs.",
+        "Confidence building: Helps dogs become confident in water.",
+        "Stress relief: Swimming can release energy and reduce stress."
+      ],
+      "reverse": true,
+      "image": "public/1E5A8009-scaled.jpg",
+      "alt": "Dogs enjoying water fitness"
+    },
+    {
+      "title": "Our Fun & Fitness Sessions",
+      "paragraphs": [
+        "Sessions are supervised by our certified hydrotherapist to ensure safety and wellbeing.",
+        "We welcome dogs of all ages, breeds, and swimming abilities.",
+        "Looking for a dog swimming pool near me or a big swimming pool for dogs in Kidderminster? Bring your furry friend to K9 Leisure Club for a splashing good time!"
+      ],
+      "ctaText": "Book now",
+      "ctaHref": "contact.html"
+    }
+  ]
+}
