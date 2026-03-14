@@ -1,6 +1,6 @@
 {
   "hero": {
-    "kicker": "Welcome to K9 Leisure Club",
+    "kicker": "Welcome to K9 Leisure Clu",
     "title": "Where dogs come to play, pamper, and splash",
     "intro": "Hydrotherapy | Daycare | Grooming",
     "ctaPrimary": "BOOK NOW",
@@ -81,10 +81,22 @@
       "description": "Daily care and pampering in one place.",
       "icon": "public/icons/FontAwesomeicon-paw.svg",
       "links": [
-        { "label": "Doggy Daycare", "href": "doggy-daycare.html" },
-        { "label": "Grooming", "href": "grooming.html" },
-        { "label": "Spa packages", "href": "spa-packages.html" },
-        { "label": "Price List", "href": "prices.html" }
+        {
+          "label": "Doggy Daycare",
+          "href": "doggy-daycare.html"
+        },
+        {
+          "label": "Grooming",
+          "href": "grooming.html"
+        },
+        {
+          "label": "Spa packages",
+          "href": "spa-packages.html"
+        },
+        {
+          "label": "Price List",
+          "href": "prices.html"
+        }
       ]
     },
     {
@@ -92,9 +104,18 @@
       "description": "Support recovery, fitness, and confidence.",
       "icon": "public/icons/FaSolidDumbbell.svg",
       "links": [
-        { "label": "Hydrotherapy", "href": "hydrotherapy.html" },
-        { "label": "Clinical", "href": "hydrotherapy-clinical.html" },
-        { "label": "Fun & Fitness", "href": "hydrotherapy-fun-fitness.html" }
+        {
+          "label": "Hydrotherapy",
+          "href": "hydrotherapy.html"
+        },
+        {
+          "label": "Clinical",
+          "href": "hydrotherapy-clinical.html"
+        },
+        {
+          "label": "Fun & Fitness",
+          "href": "hydrotherapy-fun-fitness.html"
+        }
       ]
     },
     {
@@ -102,10 +123,22 @@
       "description": "Get in touch, read updates, and plan your visit.",
       "icon": "public/icons/MaterialSymbolsCalendarMonthOutline.svg",
       "links": [
-        { "label": "About us", "href": "about.html" },
-        { "label": "News", "href": "news.html" },
-        { "label": "Blog", "href": "blogs/index.html" },
-        { "label": "Contact Us", "href": "contact.html" }
+        {
+          "label": "About us",
+          "href": "about.html"
+        },
+        {
+          "label": "News",
+          "href": "news.html"
+        },
+        {
+          "label": "Blog",
+          "href": "blogs/index.html"
+        },
+        {
+          "label": "Contact Us",
+          "href": "contact.html"
+        }
       ]
     }
   ]
