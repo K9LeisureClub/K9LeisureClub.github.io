@@ -4,9 +4,28 @@
     "title": "Speak with the K9 Leisure Club team and start your booking",
     "intro": "Use this page for enquiries and bookings across daycare, grooming, spa, and hydrotherapy."
   },
+  "map": {
+    "title": "K9 Leisure Club map",
+    "embedSrc": "https://www.google.com/maps?q=K9%20Leisure%20Club%2C%20118%20Worcester%20Rd%2C%20Kidderminster%2C%20DY10%201JR&output=embed",
+    "placeUrl": "https://www.google.com/maps/place/K9+Leisure+Club/@52.3760105,-2.2508506,17z/data=!4m6!3m5!1s0x48708db6eda4afd5:0xc1849a8071e1c2f4!8m2!3d52.3760105!4d-2.2508676!16s%2Fg%2F11wq5sgg87?hl=en-GB&entry=ttu&g_ep=EgoyMDI2MDMxMS4wIKXMDSoASAFQAw%3D%3D"
+  },
   "booking": {
     "title": "Book now in 3 steps"
   },
+  "steps": [
+    {
+      "title": "Step 1: Choose your service",
+      "text": "Select daycare, grooming, hydrotherapy, or a combined care plan."
+    },
+    {
+      "title": "Step 2: Share your dog's details",
+      "text": "Provide age, breed, temperament, and any health notes so we can tailor recommendations."
+    },
+    {
+      "title": "Step 3: Confirm your appointment",
+      "text": "Our team confirms availability and provides your booking time and preparation guidance."
+    }
+  ],
   "fallback": {
     "title": "Need help right now?",
     "text": "If online submission is unavailable, call or email directly and the team will help with your enquiry."

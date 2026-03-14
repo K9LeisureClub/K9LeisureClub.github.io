@@ -1,4 +1,11 @@
 const COOKIE_KEY = "k9_cookie_pref";
+const DEFAULT_MAP_CONFIG = {
+  title: "K9 Leisure Club map",
+  embedSrc: "https://www.google.com/maps?q=118%20Worcester%20Rd%2C%20Kidderminster%2C%20DY10%201JR&output=embed",
+  placeUrl: "https://www.google.com/maps/place/K9+Leisure+Club/@52.3760105,-2.2508506,17z"
+};
+
+let mapConfig = { ...DEFAULT_MAP_CONFIG };
 
 function qs(sel, root = document) {
   return root.querySelector(sel);
@@ -177,6 +184,7 @@ function loadMapIfAllowed() {
     holder.innerHTML = `
       <div>
         <p>Functional cookies are required to load the embedded map.</p>
+        <p><a class="btn ghost" href="${mapConfig.placeUrl}" target="_blank" rel="noreferrer noopener">Open in Google Maps</a></p>
         <p><button class="btn primary" id="mapEnableBtn" type="button">Enable functional cookies</button></p>
       </div>`;
     const btn = qs("#mapEnableBtn");
@@ -190,14 +198,15 @@ function loadMapIfAllowed() {
 
   holder.innerHTML = `
     <iframe
-      title="K9 Leisure Club map"
+      title="${mapConfig.title}"
       loading="lazy"
       width="100%"
       height="320"
       style="border:0"
       referrerpolicy="no-referrer-when-downgrade"
-      src="https://www.google.com/maps?q=118%20Worcester%20Rd%2C%20Kidderminster%2C%20DY10%201JR&output=embed">
-    </iframe>`;
+      src="${mapConfig.embedSrc}">
+    </iframe>
+    <p class="small"><a href="${mapConfig.placeUrl}" target="_blank" rel="noreferrer noopener">Open this location in Google Maps</a></p>`;
 }
 
 function setText(id, value) {
@@ -590,14 +599,17 @@ async function populatePageData(prices) {
   if (page === "contact") {
     const data = await loadJson("data/contact-page.json");
     applyHero(data.hero);
+    mapConfig = {
+      ...DEFAULT_MAP_CONFIG,
+      ...(data.map || {})
+    };
     setText("bookingTitle", data.booking?.title);
     setText("fallbackTitle", data.fallback?.title);
     setText("fallbackText", data.fallback?.text);
 
-    const booking = await loadJson("data/book-now-page.json");
     const steps = qs("#bookingSteps");
     if (steps) {
-      steps.innerHTML = (booking.steps || [])
+      steps.innerHTML = (data.steps || [])
         .map((step) => `<article class="card reveal"><h3>${step.title}</h3><p>${step.text}</p></article>`)
         .join("");
     }
@@ -715,17 +727,6 @@ async function populatePageData(prices) {
     const data = await loadJson("data/hydrotherapy-fun-fitness-page.json");
     applyHero(data.hero);
     renderFeatureSections("pageSections", data.sections);
-  }
-
-  if (page === "book-now") {
-    const data = await loadJson("data/book-now-page.json");
-    applyHero(data.hero);
-    const steps = qs("#bookingSteps");
-    if (steps) {
-      steps.innerHTML = (data.steps || [])
-        .map((step) => `<article class="card reveal"><h3>${step.title}</h3><p>${step.text}</p></article>`)
-        .join("");
-    }
   }
 
   if (page === "prices") {
