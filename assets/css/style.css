@@ -2148,12 +2148,11 @@ a.card-link:hover .card-link-arrow {
 
 @media (max-width: 879px) {
   .site-nav {
-    position: fixed;
-    top: 64px;
-    bottom: 0;
+    position: absolute;
+    top: calc(100% + 0.35rem);
     left: auto;
     right: 0;
-    width: min(86vw, 360px);
+    width: min(92vw, 420px);
     background: rgba(16, 6, 40, 0.98);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
@@ -2161,14 +2160,14 @@ a.card-link:hover .card-link-arrow {
     border-bottom: 1px solid rgba(255, 213, 63, 0.1);
     border-left: 1px solid rgba(255, 213, 63, 0.1);
     border-right: 1px solid rgba(255, 213, 63, 0.1);
-    border-radius: 18px 0 0 0;
+    border-radius: 18px 0 18px 18px;
     box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
-    max-height: none;
+    max-height: 75vh;
     overflow-y: auto;
     /* Hidden state */
     opacity: 0;
     visibility: hidden;
-    transform: translateX(16px);
+    transform: translateY(-6px);
     pointer-events: none;
     transition: opacity 200ms ease, transform 200ms ease, visibility 0s linear 200ms;
   }
@@ -2176,7 +2175,7 @@ a.card-link:hover .card-link-arrow {
   .site-nav[data-open="true"] {
     opacity: 1;
     visibility: visible;
-    transform: translateX(0);
+    transform: translateY(0);
     pointer-events: auto;
     transition: opacity 200ms ease, transform 200ms ease, visibility 0s linear 0s;
   }
