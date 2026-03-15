@@ -1,3 +1,31 @@
-@import "../base.css";
+/* Decoupled from base.css */
+:root {
+	--purple-950: #190a3b;
+	--purple-900: #2b1363;
+	--purple-700: #5e36bf;
+	--purple-100: #efe9ff;
+	--white: #ffffff;
+	--yellow-400: #ffd53f;
+	--yellow-300: #ffe37d;
+	--ink: #1f1a29;
+	--muted: #5a536b;
+	--border: #d7cbff;
+	--max: 1160px;
+	--radius: 18px;
+	--shadow: 0 14px 28px rgba(43, 19, 99, 0.16);
+	--space-xs:  0.35rem;
+	--space-sm:  0.65rem;
+	--space-md:  1rem;
+	--space-lg:  1.6rem;
+	--space-xl:  3.2rem;
+	--transition-fast: 180ms ease;
+	--transition-med:  280ms cubic-bezier(0.34, 1.56, 0.64, 1);
+	--transition-slow: 420ms ease;
+	--focus-ring: 0 0 0 3px rgba(255, 213, 63, 0.55);
+}
 
-body[data-page="blogs"] { --hero-bg: url("../../public/1E5A6649-scaled.jpg"); --band-bg: url("../../public/1T4A7443-scaled.jpg"); --surface-bg: url("../../public/photo1.jpg"); }
+body[data-page="blogs"] {
+	--hero-bg: url("../../public/1E5A6649-scaled.jpg");
+	--band-bg: url("../../public/1T4A7443-scaled.jpg");
+	--surface-bg: url("../../public/photo1.jpg");
+}
