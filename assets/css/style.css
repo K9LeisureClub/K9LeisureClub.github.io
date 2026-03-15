@@ -2213,6 +2213,11 @@ a.card-link:hover .card-link-arrow {
     gap: 2px;
     border-top: 1px dashed rgba(255, 255, 255, 0.1);
     margin-top: 0.2rem;
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: none;
   }
 
   .site-nav .has-submenu > ul > .has-submenu[data-submenu-open="true"] > ul {
