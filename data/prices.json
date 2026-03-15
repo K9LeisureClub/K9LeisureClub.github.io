@@ -38,9 +38,18 @@
     }
   },
   "addons": [
-    { "name": "Nail clipping", "price": 10 },
-    { "name": "Eye and ear cleaning", "price": 10 },
-    { "name": "Anal gland expression", "price": 10 }
+    {
+      "name": "Nail clipping",
+      "price": 10
+    },
+    {
+      "name": "Eye and ear cleaning",
+      "price": 10
+    },
+    {
+      "name": "Anal gland expression",
+      "price": 10
+    }
   ],
   "puppy": {
     "firstGroom": "25 (all sizes, up to 6 months)",
@@ -53,7 +62,7 @@
   "spa": [
     {
       "name": "Doggy Milk Bath",
-      "description": "Spoil your pooch with a luxurious milk bath that cleanses, soothes, and softens their skin and coat. This calming and nourishing experience will leave them feeling relaxed and smelling divine.",
+      "description": "Spoil your pooch with a luxurious milk bath that cleanses, soothes, and softens their skin and coat. This calming and nourishing experience will leave them feeling relaxed and smelling divine. ",
       "price": 45
     },
     {
@@ -63,7 +72,7 @@
     },
     {
       "name": "Shed Safely Mud Bath",
-      "description": "Reduce shedding and promote a healthy coat with our Shed Safely Mud Bath. This deep-cleaning treatment is infused with omega oils and B vitamins to help relieve and prevent excessive shedding.",
+      "description": "Reduce shedding and promote a healthy coat with our Shed Safely Mud Bath. This deep-cleaning treatment is infused with omega oils and B vitamins to help relieve and prevent excessive shedding. ",
       "price": 45
     },
     {
@@ -73,7 +82,7 @@
     },
     {
       "name": "Paw Spa",
-      "description": "Reduce shedding and promote a healthy coat with our Shed Safely Mud Bath. This deep-cleaning treatment is infused with omega oils and B vitamins to help relieve and prevent excessive shedding.",
+      "description": "Give those tired paws a treat with our soothing Paw Spa. This deep-cleaning soak helps eliminate fungus, germs, and bacteria, leaving your dog's paws feeling fresh and revitalised.",
       "price": 15
     }
   ]
