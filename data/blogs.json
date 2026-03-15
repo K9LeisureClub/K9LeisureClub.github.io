@@ -2,7 +2,7 @@
   "hero": {
     "kicker": "Blog",
     "title": "Advice, insights, and practical dog care guidance",
-    "intro": "All blog content is loaded from this JSON file so you can update it easily with a CMS workflow."
+    "intro": ""
   },
   "posts": [
     {
