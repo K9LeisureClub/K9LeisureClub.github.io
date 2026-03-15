@@ -1,0 +1,3 @@
+@import "../base.css";
+
+body[data-page="gallery"] { --hero-bg: url("../../public/1E5A6649-scaled.jpg"); --band-bg: url("../../public/1E5A6501-scaled.jpg"); --surface-bg: url("../../public/1E5A8320-scaled.jpg"); }

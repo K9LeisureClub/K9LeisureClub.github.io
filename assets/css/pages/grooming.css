@@ -1,0 +1,3 @@
+@import "../base.css";
+
+body[data-page="grooming"] { --hero-bg: url("../../public/1T4A7379-scaled.jpg"); --band-bg: url("../../public/1T4A7539-scaled.jpg"); --surface-bg: url("../../public/1T4A7443-scaled.jpg"); }
