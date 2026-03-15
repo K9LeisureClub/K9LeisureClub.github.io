@@ -63,44 +63,26 @@
 
     <section>
       <div class="container pricing-overview reveal">
-        <h2>Discounts</h2>
-        <table class="price-table">
-          <thead><tr><th>Offer</th></tr></thead>
-          <tbody id="discountsRows">
-            <tr><td>10% discount for 5 bookings</td></tr>
-            <tr><td>15% discount for 10 bookings</td></tr>
-            <tr><td>50% discount for each additional dog</td></tr>
-          </tbody>
-        </table>
+        <h2>Daycare snapshot</h2>
+        <div id="daycareSnapshot" class="price-highlight-grid">
+          <article class="price-highlight price-highlight-block"><div><span class="label">Full day</span><p class="price-subline">Mon-Fri, 7:30am to 6:00pm</p></div><strong>GBP 30</strong></article>
+          <article class="price-highlight price-highlight-block"><div><span class="label">Half day</span><p class="price-subline">7:30am to 12:30pm or 1:00pm to 6:00pm</p></div><strong>GBP 20</strong></article>
+        </div>
+        <div class="price-notes-inline-wrap compact-price-meta">
+          <h3>Booking perks</h3>
+          <ul id="discountsList" class="price-list">
+            <li>10% discount for 5 bookings</li>
+            <li>15% discount for 10 bookings</li>
+            <li>50% discount for each additional dog</li>
+          </ul>
+        </div>
       </div>
     </section>
 
     <section>
       <div class="container pricing-overview reveal">
-        <h2>Daycare pricing</h2>
-        <table class="price-table">
-          <thead><tr><th>Plan</th><th>Schedule</th><th>Price</th></tr></thead>
-          <tbody id="daycareRows">
-            <tr><td>Full day</td><td>Mon-Fri, 7:30am to 6:00pm</td><td>Â£30</td></tr>
-            <tr><td>Half day</td><td>7:30am to 12:30pm or 1:00pm to 6:00pm</td><td>Â£20</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-    <section>
-      <div class="container pricing-overview reveal">
-        <h2>Care add-ons</h2>
-        <table class="price-table">
-          <thead><tr><th>Service</th><th>Details</th><th>Price</th></tr></thead>
-          <tbody id="addonsRows"></tbody>
-        </table>
-      </div>
-    </section>
-
-    <section>
-      <div class="container pricing-overview reveal">
-        <h2>Grooming price table</h2>
+        <h2>Grooming snapshot</h2>
+        <p class="small">Quick comparison by size for the core grooming routes.</p>
         <table class="price-table">
           <thead><tr><th>Service</th><th>Small</th><th>Medium</th><th>Large</th><th>Extra Large</th></tr></thead>
           <tbody id="groomingRows"></tbody>
@@ -110,16 +92,17 @@
 
     <section>
       <div class="container pricing-overview reveal spa-pricing-block">
-        <h2>Indulge in Our Spa Packages</h2>
-        <table class="price-table spa-table full-width-table">
-          <thead><tr><th>Service</th><th>Details</th><th>Price</th></tr></thead>
-          <tbody id="spaRows"></tbody>
-        </table>
-        <p class="cta-row"><a class="btn primary" href="contact.html">Book now</a></p>
-        <div class="price-notes-inline-wrap">
-          <h3>Pricing guidance</h3>
-          <ul id="priceNotes" class="price-notes-inline"></ul>
+        <div class="price-columns">
+          <div>
+            <h2>Spa snapshot</h2>
+            <ul id="spaSnapshot" class="price-list price-list-split"></ul>
+          </div>
+          <div>
+            <h2>Care add-ons</h2>
+            <ul id="addonsSnapshot" class="price-list price-list-split"></ul>
+          </div>
         </div>
+        <p class="cta-row"><a class="btn primary" href="contact.html">Book now</a></p>
       </div>
     </section>
   </main>

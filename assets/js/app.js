@@ -495,19 +495,19 @@ function renderPriceList(prices) {
       const medium = formatPrice(sizeRows.medium[key] ?? "-");
       const large = formatPrice(sizeRows.large[key] ?? "-");
       const extraLarge = formatPrice(sizeRows.extraLarge[key] ?? "-");
-      return `<tr style="--row-delay:${idx * 45}ms"><td>${label}</td><td>${small}</td><td>${medium}</td><td>${large}</td><td>${extraLarge}</td></tr>`;
+      return `<tr style="--row-delay:${idx * 45}ms"><td data-label="Service">${label}</td><td data-label="Small">${small}</td><td data-label="Medium">${medium}</td><td data-label="Large">${large}</td><td data-label="Extra Large">${extraLarge}</td></tr>`;
     })
     .join("");
 
-  const discountsRows = qs("#discountsRows");
-  if (discountsRows) {
-    discountsRows.innerHTML = (prices.daycare?.discounts || [])
-      .map((item, idx) => `<tr style="--row-delay:${idx * 70}ms"><td>${item}</td></tr>`)
+  const discountsList = qs("#discountsList");
+  if (discountsList) {
+    discountsList.innerHTML = (prices.daycare?.discounts || [])
+      .map((item) => `<li>${item}</li>`)
       .join("");
   }
 
-  const daycareRows = qs("#daycareRows");
-  if (daycareRows && prices.daycare) {
+  const daycareSnapshot = qs("#daycareSnapshot");
+  if (daycareSnapshot && prices.daycare) {
     const dayData = [
       [
         "Full day",
@@ -521,21 +521,18 @@ function renderPriceList(prices) {
       ]
     ];
 
-    daycareRows.innerHTML = dayData
+    daycareSnapshot.innerHTML = dayData
       .map(
         ([plan, time, price], idx) =>
-          `<tr style="--row-delay:${idx * 70}ms"><td>${plan}</td><td>${time}</td><td>${price}</td></tr>`
+          `<article class="price-highlight price-highlight-block reveal" style="--row-delay:${idx * 70}ms"><div><span class="label">${plan}</span><p class="price-subline">${time}</p></div><strong>${price}</strong></article>`
       )
       .join("");
   }
 
-  const spaRows = qs("#spaRows");
-  if (spaRows) {
-    spaRows.innerHTML = (prices.spa || [])
-      .map(
-        (x, idx) =>
-          `<tr style="--row-delay:${idx * 70}ms"><td>${x.name}</td><td>${x.description || "Premium coat and skin treatment."}</td><td>${formatPrice(x.price)}</td></tr>`
-      )
+  const spaSnapshot = qs("#spaSnapshot");
+  if (spaSnapshot) {
+    spaSnapshot.innerHTML = (prices.spa || [])
+      .map((x) => `<li><span>${x.name}</span><strong>${formatPrice(x.price)}</strong></li>`)
       .join("");
   }
 
@@ -544,13 +541,10 @@ function renderPriceList(prices) {
     spa.innerHTML = (prices.spa || []).map((x) => `<li>${x.name} - £${x.price}</li>`).join("");
   }
 
-  const addonsRows = qs("#addonsRows");
-  if (addonsRows) {
-    addonsRows.innerHTML = (prices.addons || [])
-      .map(
-        (x, idx) =>
-          `<tr style="--row-delay:${idx * 70}ms"><td>${x.name}</td><td>Single add-on treatment</td><td>${formatPrice(x.price)}</td></tr>`
-      )
+  const addonsSnapshot = qs("#addonsSnapshot");
+  if (addonsSnapshot) {
+    addonsSnapshot.innerHTML = (prices.addons || [])
+      .map((x) => `<li><span>${x.name}</span><strong>${formatPrice(x.price)}</strong></li>`)
       .join("");
   }
 
@@ -827,10 +821,6 @@ async function populatePageData(prices) {
     const data = await loadJson("data/prices-page.json");
     applyHero(data.hero);
     renderPriceList(prices);
-    const notes = qs("#priceNotes");
-    if (notes) {
-      notes.innerHTML = (data.notes || []).map((n) => `<li>${n}</li>`).join("");
-    }
   }
 
   if (page === "blogs") {

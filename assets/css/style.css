@@ -1576,6 +1576,21 @@ a.card-link:hover .card-link-arrow {
   color: #2b1363;
 }
 
+.price-highlight-block {
+  align-items: flex-start;
+}
+
+.price-highlight-block .label {
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.price-subline {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
 .price-table-wrap {
   border-radius: 14px;
   overflow: hidden;
@@ -1597,6 +1612,22 @@ a.card-link:hover .card-link-arrow {
   border-radius: 10px;
   border: 1px solid #e6dcff;
   background: #fff;
+}
+
+.price-list-split li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.price-list-split strong {
+  color: #2b1363;
+  white-space: nowrap;
+}
+
+.compact-price-meta {
+  margin-top: 1rem;
 }
 
 .price-columns {
@@ -2222,6 +2253,72 @@ a.card-link:hover .card-link-arrow {
 
   .site-nav .has-submenu > ul > .has-submenu[data-submenu-open="true"] > ul {
     display: flex;
+  }
+
+  .price-table {
+    border: none;
+    background: transparent;
+  }
+
+  .price-table thead {
+    display: none;
+  }
+
+  .price-table tbody {
+    display: grid;
+    gap: 0.85rem;
+  }
+
+  .price-table tbody tr {
+    display: block;
+    border: 1px solid #e2d7ff;
+    border-radius: 14px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 10px 20px rgba(43, 19, 99, 0.08);
+  }
+
+  .price-table tbody tr:hover {
+    transform: none;
+    background: #fff;
+  }
+
+  .price-table td {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #efe8ff;
+    padding: 0.75rem 0.85rem;
+  }
+
+  .price-table td:last-child {
+    border-bottom: none;
+  }
+
+  .price-table td::before {
+    content: attr(data-label);
+    color: var(--muted);
+    font-size: 0.82rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    flex: 0 0 42%;
+  }
+
+  .price-highlight {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .price-highlight strong {
+    margin-top: 0.35rem;
+  }
+
+  .price-list-split li {
+    align-items: flex-start;
   }
 
   .feature-media,
