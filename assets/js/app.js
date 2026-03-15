@@ -86,6 +86,58 @@ function buildNav(site) {
   nav.innerHTML = `<ul>${itemsHtml}</ul>`;
 }
 
+function setupMobileSubmenus(nav) {
+  if (!nav) return;
+
+  const menuItems = qsa(".has-submenu", nav);
+  if (!menuItems.length) return;
+
+  menuItems.forEach((item, index) => {
+    const link = qs(":scope > a", item);
+    const submenu = qs(":scope > ul", item);
+    if (!link || !submenu) return;
+
+    const label = (link.textContent || "submenu").trim();
+    submenu.id = submenu.id || `submenu-${index + 1}`;
+
+    let toggleBtn = qs(":scope > .submenu-toggle", item);
+    if (!toggleBtn) {
+      toggleBtn = document.createElement("button");
+      toggleBtn.type = "button";
+      toggleBtn.className = "submenu-toggle";
+      toggleBtn.innerHTML = '<span class="sr-only"></span>';
+      item.insertBefore(toggleBtn, submenu);
+    }
+
+    toggleBtn.setAttribute("aria-controls", submenu.id);
+
+    const isCurrentBranch = !!qs("a[aria-current='page']", item);
+    if (isCurrentBranch) {
+      item.setAttribute("data-submenu-open", "true");
+    } else if (!item.hasAttribute("data-submenu-open")) {
+      item.setAttribute("data-submenu-open", "false");
+    }
+
+    const syncState = () => {
+      const isOpen = item.getAttribute("data-submenu-open") === "true";
+      toggleBtn.setAttribute("aria-expanded", String(isOpen));
+      toggleBtn.setAttribute("aria-label", `${isOpen ? "Collapse" : "Expand"} ${label} submenu`);
+      const sr = qs(".sr-only", toggleBtn);
+      if (sr) sr.textContent = `${isOpen ? "Collapse" : "Expand"} ${label} submenu`;
+    };
+
+    toggleBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      const isOpen = item.getAttribute("data-submenu-open") === "true";
+      item.setAttribute("data-submenu-open", String(!isOpen));
+      syncState();
+    });
+
+    syncState();
+  });
+}
+
 function setupNavToggle() {
   const nav = qs("#siteNav");
   const toggle = qs("#navToggle");
@@ -94,6 +146,7 @@ function setupNavToggle() {
   // Inject hamburger icon lines
   toggle.innerHTML = '<span class="burger-bar"></span><span class="burger-bar"></span><span class="burger-bar"></span><span class="sr-only">Menu</span>';
   toggle.setAttribute("aria-label", "Open navigation menu");
+  setupMobileSubmenus(nav);
 
   function closeNav() {
     nav.setAttribute("data-open", "false");
