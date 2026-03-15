@@ -91,10 +91,46 @@ function setupNavToggle() {
   const toggle = qs("#navToggle");
   if (!nav || !toggle) return;
 
+  // Inject hamburger icon lines
+  toggle.innerHTML = '<span class="burger-bar"></span><span class="burger-bar"></span><span class="burger-bar"></span><span class="sr-only">Menu</span>';
+  toggle.setAttribute("aria-label", "Open navigation menu");
+
+  function closeNav() {
+    nav.setAttribute("data-open", "false");
+    toggle.setAttribute("aria-expanded", "false");
+    toggle.setAttribute("aria-label", "Open navigation menu");
+    toggle.classList.remove("is-open");
+  }
+
   toggle.addEventListener("click", () => {
     const open = nav.getAttribute("data-open") === "true";
-    nav.setAttribute("data-open", String(!open));
-    toggle.setAttribute("aria-expanded", String(!open));
+    if (open) {
+      closeNav();
+    } else {
+      nav.setAttribute("data-open", "true");
+      toggle.setAttribute("aria-expanded", "true");
+      toggle.setAttribute("aria-label", "Close navigation menu");
+      toggle.classList.add("is-open");
+    }
+  });
+
+  document.addEventListener("click", (e) => {
+    if (nav.getAttribute("data-open") === "true" && !nav.contains(e.target) && !toggle.contains(e.target)) {
+      closeNav();
+    }
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && nav.getAttribute("data-open") === "true") {
+      closeNav();
+      toggle.focus();
+    }
+  });
+
+  nav.addEventListener("click", (e) => {
+    if (e.target.closest("a") && nav.getAttribute("data-open") === "true") {
+      closeNav();
+    }
   });
 }
 

@@ -91,10 +91,46 @@ function setupNavToggle() {
   const nav = document.getElementById("siteNav");
   if (!btn || !nav) return;
 
+  // Inject hamburger icon lines
+  btn.innerHTML = '<span class="burger-bar"></span><span class="burger-bar"></span><span class="burger-bar"></span><span class="sr-only">Menu</span>';
+  btn.setAttribute("aria-label", "Open navigation menu");
+
+  function closeNav() {
+    nav.setAttribute("data-open", "false");
+    btn.setAttribute("aria-expanded", "false");
+    btn.setAttribute("aria-label", "Open navigation menu");
+    btn.classList.remove("is-open");
+  }
+
   btn.addEventListener("click", () => {
     const isOpen = nav.getAttribute("data-open") === "true";
-    nav.setAttribute("data-open", String(!isOpen));
-    btn.setAttribute("aria-expanded", String(!isOpen));
+    if (isOpen) {
+      closeNav();
+    } else {
+      nav.setAttribute("data-open", "true");
+      btn.setAttribute("aria-expanded", "true");
+      btn.setAttribute("aria-label", "Close navigation menu");
+      btn.classList.add("is-open");
+    }
+  });
+
+  document.addEventListener("click", (e) => {
+    if (nav.getAttribute("data-open") === "true" && !nav.contains(e.target) && !btn.contains(e.target)) {
+      closeNav();
+    }
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && nav.getAttribute("data-open") === "true") {
+      closeNav();
+      btn.focus();
+    }
+  });
+
+  nav.addEventListener("click", (e) => {
+    if (e.target.closest("a") && nav.getAttribute("data-open") === "true") {
+      closeNav();
+    }
   });
 }
 
