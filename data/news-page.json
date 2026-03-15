@@ -1,39 +1,39 @@
 {
   "hero": {
-    "kicker": "News and Blog",
-    "title": "Topic highlights from the original content",
-    "intro": "A consolidated list of source blog themes, rewritten as quick-read updates."
+    "kicker": "News &amp; Updates",
+    "title": "Latest from K9 Leisure Club",
+    "intro": "Tips, news, and stories from our team in Kidderminster."
   },
   "posts": [
     {
-      "title": "Dive In: How Hydrotherapy Can Transform Your Dog's Life",
-      "excerpt": "Hydrotherapy content highlights low-impact exercise, mobility support, and tailored water-based sessions for dogs with different needs.",
+      "title": "Why Hydrotherapy Could Change Your Dog's Life",
+      "excerpt": "Whether your dog is recovering from surgery, managing arthritis, or just loves to splash around, our hydrotherapy pool and underwater treadmill offer a low-impact workout tailored to them.",
       "category": "Hydrotherapy"
     },
     {
-      "title": "From Wolf to Woof: The Amazing Journey of Dogs",
-      "excerpt": "This topic explores how selective breeding shaped modern canine roles, traits, and temperament across working and companion breeds.",
-      "category": "Canine Education"
-    },
-    {
-      "title": "Happy Hounds: Why Doggy Daycare Beats Staying Home Alone",
-      "excerpt": "Daycare-focused content emphasizes supervised social play, stimulation, and routine for dogs who need active daytime engagement.",
+      "title": "Why Doggy Daycare Beats Staying Home Alone",
+      "excerpt": "Dogs are social animals. A day at K9 Leisure Club means supervised play, new friends, mental stimulation, and a tired, happy pup at the end of the day.",
       "category": "Daycare"
     },
     {
-      "title": "Get Your Groom On",
-      "excerpt": "Grooming articles focus on coat care, styling options, and practical maintenance services that support canine comfort and hygiene.",
+      "title": "The Full Groom Experience — What to Expect",
+      "excerpt": "From the initial brush-out to the final spritz, here is what happens during a full groom at K9 Leisure Club and why regular grooming is more than just looking good.",
       "category": "Grooming"
     },
     {
-      "title": "Holiday Hounds: Your Dog-Friendly Getaway Guide",
-      "excerpt": "Travel topic pages provide planning context for owners managing routines, transport, and care continuity while away from home.",
-      "category": "Travel"
+      "title": "Introducing Our Spa Packages",
+      "excerpt": "Treat your dog to something special. Our spa packages combine premium bathing, coat treatments, and finishing touches that leave your dog looking and feeling their best.",
+      "category": "Grooming"
     },
     {
-      "title": "How to Keep Your Dog Entertained Indoors",
-      "excerpt": "Indoor activity guidance covers enrichment ideas and structured games to reduce boredom and maintain healthy mental stimulation.",
+      "title": "Keeping Your Dog Entertained Indoors",
+      "excerpt": "Rainy days do not have to mean bored dogs. We share our favourite enrichment ideas and mental stimulation games you can do at home.",
       "category": "Wellbeing"
+    },
+    {
+      "title": "Planning a Dog-Friendly Holiday",
+      "excerpt": "Travelling with your dog takes a bit of planning but the rewards are worth it. Here are our top tips for a smooth, stress-free trip with your four-legged travel companion.",
+      "category": "Travel"
     }
   ]
 }

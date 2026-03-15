@@ -1,20 +1,34 @@
 {
+  "hero": {
+    "kicker": "Gallery",
+    "title": "Dogs in their happy place",
+    "intro": "A look inside K9 Leisure Club — daycare, grooming, hydrotherapy, and everything in between."
+  },
+  "categories": [
+    { "id": "all",          "label": "All" },
+    { "id": "daycare",      "label": "Daycare" },
+    { "id": "grooming",     "label": "Grooming" },
+    { "id": "hydrotherapy", "label": "Hydrotherapy" },
+    { "id": "facility",    "label": "Facility" }
+  ],
   "images": [
-    {
-      "src": "public/photo2.jpg",
-      "alt": "Interior play area inside K9 Leisure Club"
-    },
-    {
-      "src": "public/1E5A6501-scaled.jpg",
-      "alt": "Dogs enjoying the indoor supervised play area"
-    },
-    {
-      "src": "public/1T4A7379-scaled.jpg",
-      "alt": "Staff grooming a dog in the salon"
-    },
-    {
-      "src": "public/1T4A7578-scaled.jpg",
-      "alt": "Exterior of the K9 Leisure Club building"
-    }
+    { "src": "public/1E5A6501-scaled.jpg",   "alt": "Dogs enjoying the supervised indoor play area",           "category": "daycare" },
+    { "src": "public/1E5A6649-scaled.jpg",   "alt": "Social play session in the daycare centre",               "category": "daycare" },
+    { "src": "public/1E5A6691-scaled.jpg",   "alt": "Pack of dogs in the outdoor play area",                   "category": "daycare" },
+    { "src": "public/1T4A7379-scaled.jpg",   "alt": "Groomer styling a dog in the salon",                      "category": "grooming" },
+    { "src": "public/1T4A7443-scaled.jpg",   "alt": "Dog after a full groom looking spotless",                 "category": "grooming" },
+    { "src": "public/1T4A7461-scaled.jpg",   "alt": "Spa treatment in progress at K9 Leisure Club",            "category": "grooming" },
+    { "src": "public/1T4A7539-scaled.jpg",   "alt": "Professional coat finishing in the grooming suite",       "category": "grooming" },
+    { "src": "public/1E5A8005-scaled.jpg",   "alt": "Dog in the hydrotherapy pool",                            "category": "hydrotherapy" },
+    { "src": "public/1E5A8079-scaled.jpg",   "alt": "Underwater treadmill session for rehabilitation",         "category": "hydrotherapy" },
+    { "src": "public/1E5A8155-scaled.jpg",   "alt": "Hydrotherapist guiding a swim session",                   "category": "hydrotherapy" },
+    { "src": "public/1E5A8180-scaled.jpg",   "alt": "Clinical hydrotherapy session in progress",               "category": "hydrotherapy" },
+    { "src": "public/1E5A8251-scaled.jpg",   "alt": "Fun and fitness swim session for a confident dog",        "category": "hydrotherapy" },
+    { "src": "public/1E5A8320-scaled.jpg",   "alt": "Dog enjoying a relaxed water session",                    "category": "hydrotherapy" },
+    { "src": "public/1E5A8009-scaled.jpg",   "alt": "K9 Leisure Club hydrotherapy suite overview",             "category": "facility" },
+    { "src": "public/1T4A7270.jpg",          "alt": "Outdoor area and approach to K9 Leisure Club",            "category": "facility" },
+    { "src": "public/1T4A7573-scaled.jpg",   "alt": "Inside the welcoming reception area",                     "category": "facility" },
+    { "src": "public/1T4A7578-scaled.jpg",   "alt": "Exterior of the K9 Leisure Club building",                "category": "facility" },
+    { "src": "public/photo2.jpg",            "alt": "Bright interior of the daycare play room",                "category": "daycare" }
   ]
 }

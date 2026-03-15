@@ -657,7 +657,12 @@ async function populatePageData(prices) {
     const list = qs("#faqCards");
     if (list) {
       list.innerHTML = (data.items || [])
-        .map((p) => `<article class="card reveal"><h3>${p.question}</h3><p>${p.answer}</p></article>`)
+        .map((p, i) =>
+          `<div class="acc-item" data-open="false">
+            <button class="acc-trigger" aria-expanded="false" aria-controls="faq-panel-${i}">${p.question}</button>
+            <div class="acc-panel" id="faq-panel-${i}" role="region"><p>${p.answer}</p></div>
+          </div>`
+        )
         .join("");
     }
   }
@@ -784,6 +789,179 @@ async function populatePageData(prices) {
   if (page === "blog-post") {
     const data = await loadJson("data/blogs.json");
     renderBlogPost(data.posts || []);
+  }
+
+  if (page === "reviews") {
+    const data = await loadJson("data/reviews.json");
+    applyHero(data.hero);
+
+    const summary = qs("#reviewsSummary");
+    if (summary && data.summary) {
+      const stars = "★".repeat(5);
+      summary.innerHTML = `
+        <div class="reviews-summary-score">${data.summary.score}</div>
+        <div class="reviews-summary-detail">
+          <div class="review-stars">${stars}</div>
+          <strong>${data.summary.count} reviews</strong>
+          <span>Verified ${data.summary.source} reviews</span>
+        </div>`;
+    }
+
+    const services = [...new Set((data.reviews || []).map((r) => r.service).filter(Boolean))];
+    const filterEl = qs("#reviewsFilter");
+    if (filterEl && services.length > 1) {
+      filterEl.innerHTML =
+        `<button class="filter-btn active" data-filter="all">All</button>` +
+        services.map((s) => `<button class="filter-btn" data-filter="${s}">${s}</button>`).join("");
+    }
+
+    const grid = qs("#reviewsGrid");
+    if (grid) {
+      grid.innerHTML = (data.reviews || []).map((r) => {
+        const stars = "★".repeat(r.rating || 5) + "☆".repeat(Math.max(0, 5 - (r.rating || 5)));
+        const initials = (r.name || "?").split(/[\s.]+/).map((w) => w[0] || "").slice(0, 2).join("").toUpperCase();
+        return `
+          <article class="card review-card reveal" data-service="${r.service || ""}">
+            <div class="review-stars" aria-label="${r.rating || 5} out of 5 stars">${stars}</div>
+            <p class="review-text">${r.text}</p>
+            <div class="review-meta">
+              <div class="review-avatar" aria-hidden="true">${initials}</div>
+              <div class="review-byline">
+                <strong>${r.name}</strong>
+                <span>${r.service || ""} &middot; ${r.date || ""}</span>
+              </div>
+            </div>
+          </article>`;
+      }).join("");
+
+      if (filterEl) {
+        filterEl.addEventListener("click", (e) => {
+          const btn = e.target.closest(".filter-btn");
+          if (!btn) return;
+          qsa(".filter-btn", filterEl).forEach((b) => b.classList.remove("active"));
+          btn.classList.add("active");
+          const filter = btn.dataset.filter;
+          qsa(".review-card", grid).forEach((card) => {
+            card.classList.toggle("hidden", filter !== "all" && card.dataset.service !== filter);
+          });
+        });
+      }
+    }
+
+    const ctaSection = qs("#reviewsCta");
+    if (ctaSection && data.cta) {
+      ctaSection.innerHTML = `
+        <div class="container" style="text-align:center">
+          <h2>${data.cta.heading}</h2>
+          <p>${data.cta.text}</p>
+          <a class="btn primary" href="${rootPath(data.cta.buttonHref)}">${data.cta.buttonText}</a>
+        </div>`;
+    }
+  }
+
+  if (page === "gallery") {
+    const data = await loadJson("data/gallery.json");
+    applyHero(data.hero);
+
+    const images = data.images || [];
+    let activeCategory = "all";
+
+    const filterEl = qs("#galleryFilter");
+    if (filterEl && (data.categories || []).length > 0) {
+      filterEl.innerHTML = data.categories
+        .map((c) => `<button class="filter-btn${c.id === "all" ? " active" : ""}" data-filter="${c.id}">${c.label}</button>`)
+        .join("");
+    }
+
+    const grid = qs("#galleryGrid");
+    if (grid) {
+      grid.innerHTML = images.map((img, i) => `
+        <a class="gallery-item" data-index="${i}" data-category="${img.category || "all"}" role="button" tabindex="0" aria-label="View: ${img.alt}">
+          <img src="${rootPath(img.src)}" alt="${img.alt}" loading="lazy" width="800" height="600" decoding="async">
+        </a>`).join("");
+
+      if (filterEl) {
+        filterEl.addEventListener("click", (e) => {
+          const btn = e.target.closest(".filter-btn");
+          if (!btn) return;
+          qsa(".filter-btn", filterEl).forEach((b) => b.classList.remove("active"));
+          btn.classList.add("active");
+          activeCategory = btn.dataset.filter;
+          qsa(".gallery-item", grid).forEach((item) => {
+            item.classList.toggle("hidden", activeCategory !== "all" && item.dataset.category !== activeCategory);
+          });
+        });
+      }
+
+      // Lightbox
+      const lightbox  = qs("#galleryLightbox");
+      const lbImg     = qs("#lightboxImg");
+      const lbCaption = qs("#lightboxCaption");
+      const lbClose   = qs("#lightboxClose");
+      const lbPrev    = qs("#lightboxPrev");
+      const lbNext    = qs("#lightboxNext");
+
+      if (!lightbox || !lbImg) return;
+
+      let currentIndex = 0;
+
+      function visibleImages() {
+        return images.filter((_, i) => {
+          const el = qs(`.gallery-item[data-index="${i}"]`);
+          return el && !el.classList.contains("hidden");
+        });
+      }
+
+      function showLightbox(visIdx) {
+        const visible = visibleImages();
+        if (!visible.length) return;
+        currentIndex = Math.max(0, Math.min(visIdx, visible.length - 1));
+        const img = visible[currentIndex];
+        lbImg.src = rootPath(img.src);
+        lbImg.alt = img.alt;
+        lbCaption.textContent = img.alt;
+        lightbox.hidden = false;
+        document.body.style.overflow = "hidden";
+        lbClose.focus();
+      }
+
+      function closeLightbox() {
+        lightbox.hidden = true;
+        lbImg.src = "";
+        document.body.style.overflow = "";
+      }
+
+      grid.addEventListener("click", (e) => {
+        const item = e.target.closest(".gallery-item");
+        if (!item || item.classList.contains("hidden")) return;
+        const absIdx = parseInt(item.dataset.index, 10);
+        const visible = visibleImages();
+        const visIdx = visible.findIndex((_, vi) => {
+          const origIdx = images.indexOf(visible[vi]);
+          return origIdx === absIdx;
+        });
+        showLightbox(visIdx >= 0 ? visIdx : 0);
+      });
+
+      grid.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          const item = e.target.closest(".gallery-item");
+          if (item) item.click();
+        }
+      });
+
+      lbClose.addEventListener("click", closeLightbox);
+      lightbox.addEventListener("click", (e) => { if (e.target === lightbox) closeLightbox(); });
+      lbPrev.addEventListener("click", () => showLightbox(currentIndex - 1));
+      lbNext.addEventListener("click", () => showLightbox(currentIndex + 1));
+
+      document.addEventListener("keydown", (e) => {
+        if (lightbox.hidden) return;
+        if (e.key === "Escape")      closeLightbox();
+        else if (e.key === "ArrowLeft")  showLightbox(currentIndex - 1);
+        else if (e.key === "ArrowRight") showLightbox(currentIndex + 1);
+      });
+    }
   }
 }
 

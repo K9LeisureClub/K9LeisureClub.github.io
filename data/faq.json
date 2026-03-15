@@ -1,29 +1,49 @@
 {
   "hero": {
     "kicker": "FAQs",
-    "title": "Frequently asked questions from the source topics",
-    "intro": "Answers are based on the reference content themes and rewritten for clarity."
+    "title": "Got a question? We have the answer.",
+    "intro": "Everything you need to know about daycare, grooming, hydrotherapy, and visiting K9 Leisure Club in Kidderminster."
   },
   "items": [
     {
-      "question": "Why is socialisation important in daycare?",
-      "answer": "The source describes daycare as supervised social interaction where dogs can play safely, build confidence, and maintain healthy activity routines."
+      "question": "Where are you located and how do I find you?",
+      "answer": "We are at 118 Worcester Road, Kidderminster, DY10 1JR. Plenty of on-street parking is available nearby. Office hours are Monday to Friday, 9am–5pm, though booking hours may vary — please call or email to confirm."
     },
     {
-      "question": "Which dogs need grooming and how often?",
-      "answer": "Frequency depends on coat type and condition. The source grooming content includes options from routine coat maintenance to full styling and hygiene support."
+      "question": "How do I book a place at daycare, grooming, or hydrotherapy?",
+      "answer": "The easiest way is to call us on 01562 312580 or email info@k9leisureclub.co.uk. You can also use the booking enquiry form on our Contact page. We will confirm availability and send any intake paperwork you need."
     },
     {
-      "question": "Do I need both flea and worm treatments?",
-      "answer": "Reference blog content frames flea and worm control as separate concerns that may require different treatment schedules, so owners should follow veterinary advice."
+      "question": "What does a typical daycare day look like?",
+      "answer": "Dogs enjoy a full day of supervised indoor and outdoor play with carefully matched playgroups, plenty of enrichment activities, rest breaks, and lots of attention from our team. Drop-off and collection times will be confirmed when you book."
     },
     {
-      "question": "Why choose hydrotherapy?",
-      "answer": "The hydrotherapy pages describe it as a low-impact option that may support mobility, rehabilitation, and fitness where land exercise alone is not ideal."
+      "question": "My dog has never been to daycare before — how do you settle them in?",
+      "answer": "We always recommend a short introductory visit so your dog can meet the team and sniff around at their own pace before joining a group session. This reduces first-day nerves for both dogs and owners."
     },
     {
-      "question": "Can maps be disabled for privacy?",
-      "answer": "Yes. This site gates the map behind functional cookie consent and still provides phone, email, and address details for direct contact."
+      "question": "What vaccinations or health checks are required?",
+      "answer": "All dogs attending any of our services must be up to date with their core vaccinations (including kennel cough), regularly treated for fleas and worms, and in good general health. We may ask to see your vet card at the first visit."
+    },
+    {
+      "question": "What grooming services do you offer?",
+      "answer": "We offer a full range from a simple bath and blow-dry through to breed-specific cuts, full styling, de-shedding treatments, nail trims, ear cleaning, and our popular spa packages. See the Grooming and Spa Packages pages for full details."
+    },
+    {
+      "question": "Is hydrotherapy right for my dog?",
+      "answer": "Hydrotherapy is suitable for dogs of all ages — whether recovering from surgery or injury, managing long-term conditions like arthritis, or simply looking for a low-impact fitness and confidence boost. Our qualified hydrotherapists will assess your dog and create a tailored plan. A vet referral is recommended for clinical sessions."
+    },
+    {
+      "question": "Do you cater for older or less mobile dogs?",
+      "answer": "Absolutely. Our hydrotherapy pool and underwater treadmill are particularly popular with senior dogs and those with mobility challenges. We take things at your dog's pace and adjust every session accordingly."
+    },
+    {
+      "question": "What are your prices?",
+      "answer": "Full pricing for daycare, grooming, spa packages, and hydrotherapy is listed on our Price List page. If you have a specific query or need a bespoke package, please get in touch and we will be happy to help."
+    },
+    {
+      "question": "How do I contact you?",
+      "answer": "Call us on 01562 312580, email info@k9leisureclub.co.uk, or fill in the enquiry form on our Contact page. Office hours are Mon–Fri, 9am–5pm."
     }
   ]
 }

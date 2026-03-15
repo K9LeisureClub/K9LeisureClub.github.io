@@ -1,32 +1,29 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en-GB">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#2b1363">
-<title>FAQ | K9 Leisure Club</title>
-  <meta name="description" content="Frequently asked questions about daycare, grooming, hydrotherapy, and practical site usage.">
-  <meta name="robots" content="index,follow,max-image-preview:large">
-  <link rel="canonical" href="https://www.k9leisureclub.co.uk/faq.html">
+  <meta name="theme-color" content="#2b1363">
+  <title>Photo Gallery | K9 Leisure Club Kidderminster</title>
+  <meta name="description" content="Browse photos from K9 Leisure Club in Kidderminster — daycare play sessions, professional grooming, hydrotherapy, and our facility.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://www.k9leisureclub.co.uk/gallery.html">
   <meta property="og:type" content="website">
-    <meta property="og:locale" content="en_GB">
+  <meta property="og:locale" content="en_GB">
   <meta property="og:site_name" content="K9 Leisure Club">
-<meta property="og:title" content="K9 Leisure Club FAQ">
-  <meta property="og:description" content="Answers based on source service and blog themes.">
-  <meta property="og:url" content="https://www.k9leisureclub.co.uk/faq.html">
+  <meta property="og:title" content="Photo Gallery | K9 Leisure Club">
+  <meta property="og:description" content="Browse photos of daycare, grooming, hydrotherapy, and more at K9 Leisure Club in Kidderminster.">
+  <meta property="og:url" content="https://www.k9leisureclub.co.uk/gallery.html">
   <meta property="og:image" content="https://www.k9leisureclub.co.uk/public/open-graph-v2.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="K9 Leisure Club FAQ">
-  <meta name="twitter:description" content="Practical answers for common owner questions.">
+  <meta name="twitter:title" content="Photo Gallery | K9 Leisure Club">
+  <meta name="twitter:description" content="Browse photos of daycare, grooming, hydrotherapy, and more at K9 Leisure Club in Kidderminster.">
   <meta name="twitter:image" content="https://www.k9leisureclub.co.uk/public/open-graph-v2.png">
   <link rel="icon" type="image/png" href="public/fav.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
-  <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"FAQPage","name":"K9 Leisure Club FAQ","url":"https://www.k9leisureclub.co.uk/faq.html"}
-  </script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -47,24 +44,40 @@
   }
   </script>
 </head>
-<body data-page="faq">
+<body data-page="gallery">
   <div class="news-strip"><div class="container"><div id="newsTrack" class="news-track">Latest updates from K9 Leisure Club will appear here.</div></div></div>
-  <header class="site-header"><div class="container header-wrap"><a class="brand" href="index.html"><span class="brand-mark"><img class="brand-logo" src="public/logo.svg" alt="K9 Leisure Club logo"><span><strong data-bind="brandName">K9 Leisure Club</strong><small data-bind="brandTagline">Hydrotherapy | Daycare | Grooming</small></span></span></a><button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="siteNav">Menu</button><nav id="siteNav" class="site-nav" data-open="false" aria-label="Primary"><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="news.html">News</a></li><li><a href="faq.html" aria-current="page">FAQ</a></li><li><a href="contact.html">Contact</a></li></ul></nav></div></header>
+  <header class="site-header"><div class="container header-wrap"><a class="brand" href="index.html"><span class="brand-mark"><img class="brand-logo" src="public/logo.svg" alt="K9 Leisure Club logo"><span><strong data-bind="brandName">K9 Leisure Club</strong><small data-bind="brandTagline">Hydrotherapy | Daycare | Grooming</small></span></span></a><button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="siteNav">Menu</button><nav id="siteNav" class="site-nav" data-open="false" aria-label="Primary"><ul></ul></nav></div></header>
 
   <main>
-    <section class="hero"><div class="container"><span id="heroKicker" class="kicker">FAQs</span><h1 id="heroTitle">Got a question? We have the answer.</h1><p id="heroIntro">Everything you need to know about daycare, grooming, hydrotherapy, and visiting K9 Leisure Club.</p></div></section>
-    <section>
+    <section class="hero">
       <div class="container">
-        <h2>Questions owners ask most often</h2>
-        <div id="faqCards" class="accordion"></div>
+        <span id="heroKicker" class="kicker">Gallery</span>
+        <h1 id="heroTitle">Dogs in their happy place</h1>
+        <p id="heroIntro">A look inside K9 Leisure Club — daycare, grooming, hydrotherapy, and everything in between.</p>
+      </div>
+    </section>
+
+    <section class="feature-band">
+      <div class="container">
+        <div id="galleryFilter" class="gallery-filter" role="group" aria-label="Filter gallery by category"></div>
+        <div id="galleryGrid" class="gallery-grid"></div>
       </div>
     </section>
   </main>
+
+  <!-- Lightbox overlay -->
+  <div id="galleryLightbox" class="gallery-lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close image viewer">&times;</button>
+    <button class="lightbox-prev" id="lightboxPrev" aria-label="Previous image">&#8249;</button>
+    <button class="lightbox-next" id="lightboxNext" aria-label="Next image">&#8250;</button>
+    <figure class="lightbox-figure">
+      <img id="lightboxImg" src="" alt="">
+      <figcaption id="lightboxCaption"></figcaption>
+    </figure>
+  </div>
 
   <footer class="site-footer"><div class="container footer-grid"><div><img class="footer-logo" src="public/footer-logo.svg" alt="K9 Leisure Club footer logo"><h3 data-bind="brandName">K9 Leisure Club</h3><p data-bind="address">118 Worcester Rd, Kidderminster, DY10 1JR</p></div><div><h3>Contact</h3><p><a data-href="phone" href="tel:01562312580"><span data-bind="phone">01562 312580</span></a></p><p><a data-href="email" href="mailto:info@k9leisureclub.co.uk"><span data-bind="email">info@k9leisureclub.co.uk</span></a></p></div><div><h3>Social</h3><p><a class="icon-link" data-href="instagram" href="#" target="_blank" rel="noreferrer"><img src="public/icons/FontAwesomeicon-instagram.svg" alt="Instagram icon"><span>Instagram</span></a></p><p><a class="icon-link" data-href="facebook" href="#" target="_blank" rel="noreferrer"><img src="public/icons/FontAwesomeicon-facebook-square.svg" alt="Facebook icon"><span>Facebook</span></a></p><p><a class="icon-link" data-href="tiktok" href="#" target="_blank" rel="noreferrer"><img src="public/icons/FontAwesomeicon-tiktok.svg" alt="TikTok icon"><span>TikTok</span></a></p></div></div></footer>
   <div id="cookieBanner" class="cookie-banner" role="region" aria-label="Cookie consent"><p>We use essential cookies for site operation. Functional cookies are optional and needed for embedded services such as maps.</p><div class="cookie-actions"><button id="cookieAccept" class="btn primary" type="button">Accept functional cookies</button><button id="cookieDecline" class="btn ghost" type="button">Decline functional cookies</button></div></div>
   <script src="assets/js/app.js" defer></script>
 </body>
 </html>
-
-

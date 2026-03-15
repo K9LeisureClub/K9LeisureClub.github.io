@@ -79,7 +79,9 @@
         "faq.html",
         "news.html",
         "blogs/index.html",
-        "blogs/post.html"
+        "blogs/post.html",
+        "reviews.html",
+        "gallery.html"
       ],
       "children": [
         {
@@ -93,6 +95,14 @@
         {
           "label": "Blog",
           "href": "blogs/index.html"
+        },
+        {
+          "label": "Reviews",
+          "href": "reviews.html"
+        },
+        {
+          "label": "Gallery",
+          "href": "gallery.html"
         }
       ]
     },
